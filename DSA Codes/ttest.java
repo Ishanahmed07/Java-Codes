@@ -1,4 +1,3 @@
-import javax.naming.ldap.ManageReferralControl;
 
 // interface baseI {
 //     void method();
@@ -125,20 +124,34 @@ import javax.naming.ldap.ManageReferralControl;
 //     }
 // }
 
+// public class ttest {
+//     public static void main(String[] args) {
+//         String str = "GeeksForGeeks";
+//         System.out.println(delAlternate(str));
+
+//     }
+
+//     static String delAlternate(String S) {
+//         String str = "";
+//         for (int i = 0; i < S.length(); i++) {
+//             if (i % 2 == 0) {
+//                 str = str + S.charAt(i);
+//             }
+//         }
+//         return str;
+//     }
+// }
+
 public class ttest {
     public static void main(String[] args) {
-        String str = "GeeksForGeeks";
-        System.out.println(delAlternate(str));
-
-    }
-
-    static String delAlternate(String S) {
-        String str = "";
-        for (int i = 0; i < S.length(); i++) {
-            if (i % 2 == 0) {
-                str = str + S.charAt(i);
+        int[] arr = { 5, 6, 7, 8, 9, 10, 1, 2, 3 };
+        for (int i = 0; i < arr.length; i++) {
+            int target = 3;
+            if (arr[i] == target) {
+                System.out.println("Found at index " + i);
+            } else {
+                System.out.println("Not found");
             }
         }
-        return str;
     }
 }
